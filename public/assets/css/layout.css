@@ -3,12 +3,12 @@ input, textarea, select {
     font-size: 19pt;
     font-weight: 300;
     line-height: 1.75em;
-    color: #888;
+    
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: 300;
-    color: #666;
+    color: rgb(0, 0, 0);
     line-height: 1.5em;
 }
 
@@ -18,7 +18,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
     h1 a strong, h2 a strong, h3 a strong, h4 a strong, h5 a strong, h6 a strong {
-        color: #333;
+		color: rgb(0, 0, 0);
     }
 
 h2 {
@@ -27,11 +27,11 @@ h2 {
 }
 
     h2.alt {
-        color: #888;
+        color: rgb(202, 23, 23);
     }
 
         h2.alt strong {
-            color: #666;
+            color: rgb(255, 11, 11);
         }
 
 h3 {
@@ -44,6 +44,8 @@ header {
 
     header > p {
         margin: 1em 0 0 0;
+		color: #ffffff;
+		font-size: large;
     }
 
 footer {
@@ -52,7 +54,7 @@ footer {
 
 strong, b {
     font-weight: 300;
-    color: #666;
+    color: rgb(238, 4, 4);
 }
 
 em, i {
@@ -62,7 +64,7 @@ em, i {
 a {
     text-decoration: none;
     color: inherit;
-    border-bottom: dotted 1px rgba(128, 128, 128, 0.5);
+    
     -moz-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
     -webkit-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
     -ms-transition: color 0.35s ease-in-out, border-bottom-color 0.35s ease-in-out;
@@ -89,7 +91,7 @@ sup {
 
 hr {
     border: 0;
-    border-top: solid 1px #ddd;
+    border-top: solid 1px rgb(0, 0, 0);
 }
 
 blockquote {
@@ -231,13 +233,13 @@ section, article {
 		display: block;
 		border: 0;
 		outline: 0;
-		background: #fff;
-		background: rgba(255, 255, 255, 0.75);
+		background: rgb(204, 204, 204);
+		background: rgba(221, 212, 212, 0.75);
 		width: 100%;
 		border-radius: 0.35em;
 		padding: 0.75em 1em 0.75em 1em;
 		box-shadow: inset 0 0.1em 0.1em 0 rgba(0, 0, 0, 0.05);
-		border: solid 1px rgba(0, 0, 0, 0.15);
+		border: solid 1px rgba(238, 3, 3, 0.15);
 		-moz-transition: all 0.35s ease-in-out;
 		-webkit-transition: all 0.35s ease-in-out;
 		-ms-transition: all 0.35s ease-in-out;
@@ -292,7 +294,7 @@ section, article {
 	}
 
 		table tbody tr:nth-child(2n+2) {
-			background: #f4f4f4;
+			background: #c21e1e;
 		}
 
 		table td {
@@ -303,17 +305,14 @@ section, article {
 			text-align: left;
 			padding: 0.5em 1em 0.5em 1em;
 			color: #fff;
-			background: #222729 url("images/overlay.png");
+			background: #000000 url("images/overlay.png");
 		}
 
 		table thead {
-			background: #444;
+			background: rgb(192, 0, 0);
 			color: #fff;
 		}
 
-		table tfoot {
-			background: #eee;
-		}
 
 /* Button */
 
@@ -328,7 +327,7 @@ section, article {
 		color: #fff !important;
 		text-decoration: none;
 		padding: 0.75em 2.5em 0.75em 2.5em;
-		background-color: #8ebebc;
+		background-color: #072020;
 		border: 0;
 		cursor: pointer;
 		background-image: -moz-linear-gradient(top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.15)), url("images/overlay.png");
@@ -346,7 +345,7 @@ section, article {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background-color: #9ececc;
+			background-color: #077975;
 		}
 
 		input[type="button"]:active,
@@ -354,26 +353,29 @@ section, article {
 		input[type="reset"]:active,
 		button:active,
 		.button:active {
-			background-color: #7eaeac;
+			background-color: #010505;
 		}
 
 /* Item */
 
 	.item {
-		box-shadow: 0 0.05em 0.15em 0 rgba(0, 0, 0, 0.05);
+		box-shadow: 0 0.05em 0.15em 0 rgba(255, 239, 239, 0.05);
 		margin-bottom: 40px;
 	}
 
 		.item header {
-			background: #fff;
+			background: rgba(146, 132, 132, 0.795);
 			margin: 0;
 			padding: 1em 0 1em 0;
 			font-size: 0.8em;
+			
 		}
 
 			.item header h3 {
 				font-size: 1em;
 			}
+		
+			
 
 /* Icons */
 
@@ -411,9 +413,10 @@ section, article {
             -webkit-justify-content: space-between;
             -ms-justify-content: space-between;
             justify-content: space-between;
-            background: #222629 url("images/overlay.png");
+            background: #b331ff5d;
+
             box-shadow: inset -0.25em 0 0.25em 0 rgba(0, 0, 0, 0.1);
-            color: #fff;
+            
             height: 100%;
             left: 0;
             overflow-y: auto;
